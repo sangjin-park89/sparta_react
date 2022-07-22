@@ -7,7 +7,7 @@
 - 브라우저가 코드를 읽는 방식은 위에서 아래 방향이다.
 
 ### 실습
-```
+```javascript
 <script>
         const title = document.getElementById("title");
         // 자바스크립트에서는 어떤 객체의 속성에 접근할 때 .을 이용해 접근할 수 있어요.
@@ -48,7 +48,7 @@
 ```
 
 ### DOM 요소 추가하기
-```
+```javascript
 // 새 요소를 만들어요.
         const new_div = document.createElement("div");
 
@@ -70,7 +70,7 @@
 - 변수를 선언할 때 var, let, const로 할 수 있다.
 - const는 재할당이 불가능하고 let은 재할당이 가능하다.
 - const, let은 블록 레벨 스코프를 갖고 var는 함수 레벨 스코프이다.
-```
+```javascript
 function scope(){
 	const a = 0;
 	let b = 0;
@@ -96,16 +96,16 @@ function scope(){
 - 내장함수는 자바스크립트를 쓰기 편하도록 미리 만들어 놓은 코드 묶음
 - 함수를 선언하는 방법에는 세가지가 있다.
 - 함수 선언식
-```
+```javascript
 function do_something() { ... }
 ```
 - 함수 표현식
-```
+```javascript
 // 함수 이름은 생략해도 괜찮아요!
 let do_something = function [함수 이름]() { ... }
 ```
 - 화살표 함수
-```
+```javascript
 // 화살표 함수는 함수 표현식의 단축형입니다.
 // function까지 생력이 되었죠!
 let do_something = () => { ... }
@@ -114,7 +114,7 @@ let do_something = () => { ... }
 ### Class
 - 이후 리액트를 배울때 모양이 어떤지 알아야한다.
 - 객체 단위로 코드를 그룹화하고 쉽게 재사용하기 위해 사용
-```
+```javascript
 class Cat {
 	// 생성자 함수
   constructor(name) {
@@ -135,7 +135,7 @@ cat.showName();
 console.log(cat);
 ```
 - 클래스의 상속
-```
+```javascript
 class Cat {
 	// 생성자 함수
   constructor(name) {
@@ -186,7 +186,7 @@ my_cat.showAge();
 
 ### Spread 연산자
 - 객체 내부에 있는 요소를 객체 바깥으로 꺼내줌 `[...]`
-```
+```javascript
 let array = [1,2,3,4,5];
 // ... <- 이 점 3개를 스프레드 문법이라고 불러요.
 // 배열 안에 있는 항목들(요소들)을 전부 꺼내준다는 뜻입니다.
@@ -200,7 +200,7 @@ console.log(new_array);
 ### 조건부 삼항 연산자
 - if문의 단축 형태
 - 사용법 : 조건 ? 참일 경우 : 거짓일 경우
-```
+```javascript
 let info = {name: "mean0", id: 0};
 
 let is_me = info.name === "mean0"? true : false;
