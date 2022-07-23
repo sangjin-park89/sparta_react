@@ -5,13 +5,8 @@
 
 ## JSX 사용법
 - - 1. 태그는 꼭 닫아주기
-    
     App.js 파일에서 실습합니다! (오류를 내면서 해보는 거예요!)
-    
-    하이라이트 된 부분은 지워주세요.
-    
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d37cc27f-32eb-428c-811a-4e5def9852bf/_2020-10-04__10.49.55.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d37cc27f-32eb-428c-811a-4e5def9852bf/_2020-10-04__10.49.55.png)
-    
+    function App() 내부는 지워주세요.
     ```jsx
     // input 태그를 닫지 않고 넣어볼거예요!
     function App() {
@@ -22,9 +17,6 @@
       );
     }
     ```
-    
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/74abe6a2-a720-4eb4-b8cc-4c3e4ba43ba7/_2020-10-04__10.52.29.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/74abe6a2-a720-4eb4-b8cc-4c3e4ba43ba7/_2020-10-04__10.52.29.png)
-    
     JSX 문법에 맞지 않는다고 에러가 납니다! 아래처럼 /를 추가하고 브라우저를 새로고침 해봅시다.
     
     ```jsx
@@ -44,9 +36,6 @@
         </div>
       );
     ```
-    
-    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04414c10-53cc-456f-8b3c-0812b7adf7b0/_2020-10-04__10.59.09.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04414c10-53cc-456f-8b3c-0812b7adf7b0/_2020-10-04__10.59.09.png)
-    
     앗! 또 에러가 나네요! 컴포넌트에서 반환할 수 있는 엘리먼트는 1개입니다. 아래와 같이 바꾸고 다시 새로고침 해보세요.
     
     ```jsx
@@ -111,3 +100,4 @@
     그럼 id도 설마..? 하셨나요? id는 그냥 id로 씁니다.
     
 - 5. 인라인으로 style 주기
+    `{{ }}`중괄호를 한번 주게되면 딕셔너리로 인식하기 때문에 두번줘서 style로 인식할 수 있게 해준다.
