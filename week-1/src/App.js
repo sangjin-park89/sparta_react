@@ -4,14 +4,20 @@ import './App.css';
 
 function App() {
   let name = "sangjin"
-
+  const style = {
+    border: "1px solid #eee",
+    padding: "20px",
+    width: "200px",
+    margin: "30px auto",
+  };
   return (
     <div id="id" className="App">
-      {name !== "1" ? name : "1"}
-      {name}
-      <p style={{color : "orange", fontsize : "20px"}}>안녕하세요 리액트반 입니다!</p>
-
-      <input type="text" />
+      <div style={style}>
+        <h1 style={{color: "green"}}>안녕하세요!</h1>
+        <hr/>
+        <p style={{textAlign: "left"}}>이름을 입력해주세요.</p>
+        <input type="text"/>
+      </div>
     </div>
   );
 }

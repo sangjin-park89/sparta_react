@@ -7,13 +7,14 @@
   <body>
     <style>
       #title {
-        color: royalblue;
+        color: blue;
+        text-decoration: underline;
       }
 
       .wrap {
         display: flex;
+        align-items: center;
       }
-
       .todo-card {
         border: 1px solid gray;
         border-radius: 5px;
@@ -21,68 +22,61 @@
         margin: 1em;
         flex: 1 1 0;
       }
-
       button {
-        width: calc(80% - 20px);
+        width: 100px;
       }
 
       button:hover {
         background-color: orange;
       }
     </style>
+
     <h1 id="title">오늘 할 일</h1>
     <div class="wrap">
-      <div class="todo-card">
-        <h3>고양이 밥주기</h3>
-        <p>고양이 물, 사료 챙겨주기</p>
-        <button onClick="gray(0)">완료</button>
+      <div class="card-list">
+        
       </div>
 
-      <div class="todo-card">
-        <h3>장보기</h3>
-        <p>토마토, 계란, 초코렛 사기</p>
-        <button>완료</button>
-      </div>
-    </div>
-    <div class="wrap">
-      <div class="todo-card">
-        <h3>코딩하기</h3>
-        <p>리액트 강의 1주차 듣기</p>
-        <button>완료</button>
-      </div>
-      <div class="todo-card">
-        <h3>코딩하기</h3>
-        <p>리액트 강의 1주차 듣기</p>
-        <button>완료</button>
+      <div class="add">
+        <input id="add-input" />
+        <button onClick="addCard()">추가하기</button>
       </div>
     </div>
 
     <script>
-        
-        function sayHello(event){
-            console.log("hello");
-        }
 
-        function gray(index){
-            let card = document.getElementsByClassName("todo-card")[index];
-            card.style.backgroundColor = "gray"
-        }
+      // 완료하기 함수
+      // button에 추가해줄 거예요!
+      function completeTodo(e) {
+        // 어떤 버튼을 눌렀는 지 타겟을 가져와요.
+        console.log(e.target);
+        // 부모(투두 카드겠죠!)를 찾아봅니다.
+        console.log(e.target.parentElement);
+        // 배경색을 바꿔줍시다.
+        e.target.parentElement.style.backgroundColor = "green";
+      }
 
-        const wraps = document.getElementsByClassName("wrap");
+      // 투두 카드를 추가하는 함수
+      function addCard() {
+        // 투두를 감싸는 div 만들고 클래스 이름을 줍니다.
+        const new_todo = document.createElement("div");
+        new_todo.className = "todo-card";
 
-        console.log(wraps);
+        // 투두 안에 들어갈 타이틀과 버튼을 만들어요.
+        const title = document.createElement("h3");
+        title.textContent = document.getElementById("add-input").value;
+        const button = document.createElement("button");
+        button.textContent = "완료";
 
-        const title = document.getElementById("title");
-        console.log(title);
-        title.style.backgroundColor = "yellow";
+        // 만든 버튼에 완료하기 함수를 연결해줘요.
+        button.addEventListener("click", completeTodo);
+        // 타이틀과 버튼을 투두에 추가해주고,
+        new_todo.appendChild(title);
+        new_todo.appendChild(button);
 
-        const buttons = document.getElementsByTagName("button")
-
-        for (let i=0; i<buttons.length; i++){
-            buttons[i].addEventListener("click", sayHello)
-        }
-
-
+        // 목록에 투두를 추가해줘요.
+        document.getElementsByClassName("card-list")[0].appendChild(new_todo);
+      }
     </script>
   </body>
 </html>
