@@ -20,8 +20,9 @@ class App extends React.Component {
       console.log(this.state.list)
       return (
       <div className="App">
+        <h1>내 버킷리스트</h1>
         {/* 컴포넌트를 넣어줍니다. */}
-        <BucketList list_a={this.state.list}/>
+        <BucketList list={this.state.list}/>
       </div>
     );
   }
