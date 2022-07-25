@@ -2,7 +2,7 @@ import React from 'react';
 // BucketList 컴포넌트를 import 해옵니다.
 // import [컴포넌트 명] from [컴포넌트가 있는 파일경로];
 import BucketList from './BucketList';
-import "./style.css";
+// import "./style.css";
 import styled from "styled-components";
 
 // 클래스형 컴포넌트는 이렇게 생겼습니다!
@@ -20,34 +20,50 @@ class App extends React.Component {
   render() {
       console.log(this.state.list)
       return (
+      <Sangjin>
       <div className="App">
         <MyStyled>
-          <p>I'm here!</p>
-        </MyStyled>
-        {/* <div className="container">
+        <div className="container">
           <h1>내 버킷리스트</h1>
           <hr className="Line"></hr>
           <BucketList list={this.state.list}/>
-        </div> */}
+        </div>
+        </MyStyled>
       </div>
+      </Sangjin>
     );
   }
 }
 
 // styled components
-  // 사용 방법이 간단하고 직관적이다.
+// 사용 방법이 간단하고 직관적이다.
+const Sangjin = styled.div`
+  background-color: #eee;
+  height : 100vh;
+  width : 100vw;
+  display : block;
+`;
+
 const MyStyled = styled.div`
-  width: 50vw;
-  height: 150px;
-  background-color: ${(props) => (props.bg_color? "red": "purple")};
-  // 같은 태그 안에 하위 태그를 표현할때 아래와 같은 방식으로 진행한다.
-  p {
-    color: blue;
+  background-color: #fff;
+  width : 50vw;
+  max-width: 350px;
+  margin: 0 auto;
+  height: 80vh;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  h1 {
+    color: slateblue;
+    text-align: center;
   }
-  // 위 태그에 호버 같은 요소를 넣을 때는 아래와 같이 '&'기호를 넣어주면 된다.
-  &:hover{
-    background-color: yellow;
+
+  hr {
+    margin: 16px 0px;
   }
 `;
+
+
 
 export default App;

@@ -10,7 +10,7 @@
 - `import styled from "styled-components";`로 임포트 해준다.
 - 원하는 자리에 태그를 추가해준다.
 - 태그 이름으로 변수를 선언해주고 `styled.div`로 지정한 후 백틱( ` )으로 감싸준다.
-- 예제 코드 - 변수 명은 `<Mystyled>`이다.
+- 예제 코드 - 변수 명은 `MyStyled`이다.
     <details>
     <summary>code</summary>
     <div markdown="1">
@@ -27,17 +27,19 @@
     }
 
     const MyStyled = styled.div`
-    width: 50vw;
-    height: 150px;
-    background-color: ${(props) => (props.bg_color? "red": "purple")};
-    // 같은 태그 안에 하위 태그를 표현할때 아래와 같은 방식으로 진행한다.
-    p {
-        color: blue;
-    }
-    // 위 태그에 호버 같은 요소를 넣을 때는 아래와 같이 '&'기호를 넣어주면 된다.
-    &:hover{
-        background-color: yellow;
-    }
+        width: 50vw;
+        height: 150px;
+        // 삼항 연산자를 사용할 수도 있다.
+        background-color: ${(props) => (props.bg_color? "red": "purple")};
+        
+        // 같은 태그 안에 하위 태그를 표현할때 아래와 같은 방식으로 진행한다.
+        p {
+            color: blue;
+        }
+        // 위 태그에 호버 같은 요소를 넣을 때는 아래와 같이 '&'기호를 넣어주면 된다.
+        &:hover{
+            background-color: yellow;
+        }
     `;
     ```
 
