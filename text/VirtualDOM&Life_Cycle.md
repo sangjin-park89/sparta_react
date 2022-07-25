@@ -22,7 +22,7 @@
 
 ### 라이프 사이클 함수
 - [LifecycleEx](../lifecycle/src/LifecycleEx.js)를 바탕으로 설명
-<img src="../image/LifecycleEx.png" width="450px" height="300px" title="예시화면" alt="Ex"></img><br/>
+<br/><img src="../image/LifecycleEx.png" width="450px" height="300px" title="예시화면" alt="Ex"></img><br/>
 - constructor() : 생성자 함수. 컴포넌트가 생성되면 가장 먼저 호출된다.
 ```jsx
 constructor(props) {
