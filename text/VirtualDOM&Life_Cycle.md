@@ -22,3 +22,19 @@
 
 ### 라이프 사이클 함수
 - [LifecycleEx](../lifecycle/src/LifecycleEx.js)를 바탕으로 설명
+![LifecycleEx](../image/LifecycleEx.png)
+- constructor() : 생성자 함수. 컴포넌트가 생성되면 가장 먼저 호출된다.
+- render() : 컴포넌트의 모양을 정의하는 함수. state, props에 접근하여 데이터를 보여줄 수 있다.
+    - 컴포넌트의 모양에만 관여하는 것이 가장 좋다.
+    - state나 props에 접근할 수 있다고 해서 이를 수정하려고 하면 안됨.
+- componentDidMount() : 첫번째 렌더링 후에 단 한번 실행된다. 리렌더링(수정,업데이트) 시에는 실행되지 않는다.
+    - DidMount, 마운트가 완료되었다는 말
+    - 보통은 ajax 요청, 이벤트 등록, 함수 호출 등의 작업을 처리한다.
+    - 이미 가상돔이 실제돔에 올라간 후이기 때문에 DOM관련 처리가 가능하다.
+- componentDidUpdate(prevProps, prevState, snapshot) : 리렌더링(수정,업데이트)을 완료한 후 실행되는 함수
+    - prevProps,prevState 두개의 파라미터가 중요하다. 
+        - 각각 업데이트 되기 전 props, state이다. 
+        - 이전 데이터와 비교하기에 용이하다.
+    - DidUpdate()는 가상돔이 실제돔에 올라간 후이기 때문에 DOM관련 처리가 가능하다.
+- componentWillUnmount() : 컴포넌트가 제거된 후에 실행되는 함수.
+    - 삼항연산자로 컴포넌트를 보여주거나 없애는 것을 __조건부 렌더링__ 이라고 부른다.
