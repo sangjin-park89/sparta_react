@@ -12,3 +12,60 @@
 - 자식 요소의 `margin`이 부모 요소 쪽으로 넘어가버린 현상이다.
 - 이를 해결하기 위해서는 부모요소의 `css` 설정을 `display:flex;`로 설정하거나 `display:inline-flex;`로 설정해준다.
 
+### css 파일 주석으로 넣어 놓음
+- [style.css](../bucket_list/src/style.css)
+- 코드
+    <details>
+    <summary>style.css</summary>
+    <div markdown="1">
+    
+    ```css
+    .App {
+        background-color : #eee;
+        height : 100vh;
+        /* vh(vertical height)는 화면 비율 높이 단위 */
+        width: 100vw;
+        /* vw(vertical width)는 화면 비율 넓이 단위 */
+        display : flex;
+        /* flex를 주면 자신이 딱 필요한 만큼만 필요로 하기 때문에 대부분의 경우 높이와 넓이를 지정해주는게 이쁘다. */
+        /* 지금같은 경우에는 전체가 아니라 아래 container에서 높이와 넓이를 따로 주었다. */
+    }
+
+    .container {
+        background-color: #fff;
+        width : 50vw;
+        max-width: 350px;
+        margin: auto;
+        /* margin을 auto로 주면 좌우를 균등하게 밀어서 content가 가운데로 오게된다. (상하는 안밀어줌)*/
+        height: 80vh;
+        padding: 16px;
+        /* 내부 간격 */
+        border: 1px solid #ddd;
+        /* 테두리 */
+        border-radius: 5px;
+        /* 테두리의 모서리를 둥글게 */
+
+    }
+
+    .container > h1 {
+        /* className을 지정하지 않은 경우, 위와 같이 '.'을 넣지 않는다. */
+        color: slateblue;
+        text-align: center;
+        /* 가운데 정렬 */
+    }
+
+    .container > .Line {
+        margin: 16px 0px;
+        /* margin의 파라미터가 2개일 때는 첫번째가 위아래, 두번째가 좌우이다. */
+
+    }
+
+    .list-item {
+        padding: 16px;
+        margin: 8px;
+        background-color: aliceblue;
+    }
+    ```
+
+    </div>
+    </details>

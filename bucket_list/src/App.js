@@ -22,6 +22,7 @@ class App extends React.Component {
       <div className="App">
         <div className="container">
           <h1>내 버킷리스트</h1>
+          <hr className="Line"></hr>
           {/* 컴포넌트를 넣어줍니다. */}
           <BucketList list={this.state.list}/>
         </div>
