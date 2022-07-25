@@ -21,4 +21,4 @@
 - 제거는 페이지 이동, 사용자의 행동으로 컴포넌트가 화면에서 사라지는 단계
 
 ### 라이프 사이클 함수
-- [LifecycleEx](#../lifecycle/src/LifecycleEx.js)를 바탕으로 설명
+- [LifecycleEx](../lifecycle/src/LifecycleEx.js)를 바탕으로 설명
