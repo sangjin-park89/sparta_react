@@ -14,7 +14,7 @@
 - 웹사이트를 조각내보면 이 블록을 더 잘 이해할 수 있다.
     - 위의 예시와 같이 간단하게 블록을 잘라볼 수 있다.
     <details>
-    <summary>간단하게 HTML로 표현해보면</summary>
+    <summary>예시 HTML 코드</summary>
     <div markdown="1">
     
         ```html
