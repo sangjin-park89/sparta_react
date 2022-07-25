@@ -4,12 +4,12 @@
 
 ### Component
 - 컴포넌트는 블록이다. 
-<details>
-<summary>예시 화면</summary>
-<div markdown="1">
-<br/><img src="../image/component_01.png" width="300px" height="300px" title="분할화면" alt="Ex_01"></img><br/>
-</div>
-</details>
+    <details>
+    <summary>예시 화면</summary>
+    <div markdown="1">
+    <br/><img src="../image/component_01.png" width="300px" height="300px" title="분할화면" alt="Ex_01"></img><br/>
+    </div>
+    </details>
 
 - 웹사이트를 조각내보면 이 블록을 더 잘 이해할 수 있다.
     - 위의 예시와 같이 간단하게 블록을 잘라볼 수 있다.

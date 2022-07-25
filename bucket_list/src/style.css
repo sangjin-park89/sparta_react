@@ -1,0 +1,15 @@
+.App {
+    background-color : #eee;
+    height : 100vh;
+    /* vh(vertical height)는 화면 비율 높이 단위 */
+    width: 100vw;
+    /* vw(vertical width)는 화면 비율 넓이 단위 */
+}
+
+.container {
+    background-color: #fff;
+    max-width: 350px;
+    margin: auto;
+    /* margin을 auto로 주면 좌우를 균등하게 밀어서 content가 가운데로 오게된다. (상하는 안밀어줌)*/
+    height: 80vh;
+}

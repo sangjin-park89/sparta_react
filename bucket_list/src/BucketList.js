@@ -15,7 +15,7 @@ import React from 'react';
 const BucketList = ({list}) => {
 
     // Quiz 1: my_list에 ['a', 'b', 'c'] 대신 부모 컴포넌트가 넘겨준 값을 넣으려면 어떻게 해야할까요?
-    const my_lists = ['a', 'b', 'c'];
+    const my_lists = list;
     // A1 : const my_lists = list;
     // A2 : 위에 {list}를 props의 파라미터 값인 props로 바꾸고 const my_lists = props;로 바꾸면 된다.
 
