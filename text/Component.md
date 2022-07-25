@@ -61,3 +61,15 @@
         - 부모 컴포넌트가 자식 컴포넌트 에게 전달해준 __이미지 경로__ , 곧 __데이터__ 가 자식 컴포넌트의 __props__ 가 된다.
     - 이때 부모 컴포넌트가 가지고 있는 데이터를 자식 컴포넌트가 추가하거나 수정할 수 없다.
     - __props__ 로 받은 데이터는 수정할 수 없다.
+
+### Component 실습
+- [App.js](../bucket_list/src/App.js), [BucketList.js](../bucket_list/src/BucketList.js)
+    class형 컴포넌트 예시
+- app.js
+    - constructor로 컴포넌트 생성
+    - super로 부모 클래스의 생성자를 호출
+    - this로 자신의 컴포넌트가 갖고 있는 데이터, state를 넣어준다.
+    - render 함수 내부에 리액스 엘리먼트를 넣어주고
+        - 컴포넌트를 넣어준다.
+- BucketList.js
+    - 가져온 props를 console.log()에 넣어준다.
