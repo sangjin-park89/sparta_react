@@ -13,38 +13,41 @@
 - 웹사이트를 조각내보면 이 블록을 더 잘 이해할 수 있다.
     - 위의 예시와 같이 간단하게 블록을 잘라볼 수 있다.
     <details>
-    <summary>- 간단하게 HTML로 표현해보면</summary>
+    <summary>간단하게 HTML로 표현해보면</summary>
     <div markdown="1">
-    ```html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    </head>
-    <body>
-        <header> 
-            ...
-        </header>
-        <div class="container">
-            <div id="image-banner">
+    
+        ```html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        </head>
+        <body>
+            <header> 
                 ...
+            </header>
+            <div class="container">
+                <div id="image-banner">
+                    ...
+                </div>
+                <div id="contents-1">
+                    ...
+                </div>
             </div>
-            <div id="contents-1">
+            <footer>
                 ...
-            </div>
-        </div>
-        <footer>
-            ...
-        </footer>
-    </body>
-    </html>
-    ```
+            </footer>
+        </body>
+        </html>
+        ```
+
     </div>
     </details>
+
         - <header/>
         - <container/>
             - <contents1/>
         - <footer/>
-    > - 이 웹사이트는 크게 <header/>, <container/>, <footer/> 세개의 컴포넌트가 있고, <container/> 컴포넌트는 자식 컴포넌트인 <contents1/> 컴포넌트로 이루어져 있다.
+>   - 이 웹사이트는 크게 <header/>, <container/>, <footer/> 세개의 컴포넌트가 있고, <container/> 컴포넌트는 자식 컴포넌트인 <contents1/> 컴포넌트로 이루어져 있다.
 
 ### State와 Props
 - State는 Componenet가 가지고 있는 데이터이다.
