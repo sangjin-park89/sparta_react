@@ -24,15 +24,15 @@
 - [LifecycleEx](../lifecycle/src/LifecycleEx.js)를 바탕으로 설명
 ![LifecycleEx](../image/LifecycleEx.png)
 > - constructor() : 생성자 함수. 컴포넌트가 생성되면 가장 먼저 호출된다.
-```jsx
-constructor(props) {
-    super(props);
-    this.state = {
-      cat_name: '나비',
-    };
-    console.log('in constructor!');
-}
-```
+    ```jsx
+    constructor(props) {
+        super(props);
+        this.state = {
+        cat_name: '나비',
+        };
+        console.log('in constructor!');
+    }
+    ```
 
 ```jsx
 render() {
