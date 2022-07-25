@@ -12,7 +12,7 @@
 - 자식 요소의 `margin`이 부모 요소 쪽으로 넘어가버린 현상이다.
 - 이를 해결하기 위해서는 부모요소의 `css` 설정을 `display:flex;`로 설정하거나 `display:inline-flex;`로 설정해준다.
 
-### css 파일 주석으로 넣어 놓음
+### css 파일 안에 설명 주석 넣어 놓음
 - [style.css](../bucket_list/src/style.css)
 - 코드
     <details>
