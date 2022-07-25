@@ -1,24 +1,24 @@
 ### CSS
 
 #### selector
-- MDN 문서 링크 (https://developer.mozilla.org/ko/docs/Web/API/Document)
-```
-/* id selector */
-#id { ... }
+- [MDN 문서 링크](https://developer.mozilla.org/ko/docs/Web/API/Document)
+    ```css
+    /* id selector */
+    #id { ... }
 
-/* class selector */
-.class { ... }
+    /* class selector */
+    .class { ... }
 
-/* tag selector */
-tagName { ... }
+    /* tag selector */
+    tagName { ... }
 
-/* 여러 요소 선택하기 */
-#id, .class { ... }
+    /* 여러 요소 선택하기 */
+    #id, .class { ... }
 
-/* 수도 클래스 선택자 */
-/* 어떤 요소가 특정 상태(마우스 올림, 포커스 됨 등등)일 때만 선택하게 해주는 선택자예요. */
-button:hover { ... }
-```
+    /* 수도 클래스 선택자 */
+    /* 어떤 요소가 특정 상태(마우스 올림, 포커스 됨 등등)일 때만 선택하게 해주는 선택자예요. */
+    button:hover { ... }
+    ```
 
 ### 그리드 시스템
 - 요소들이 갖는 각각의 영역 (레이아웃)
@@ -28,4 +28,4 @@ button:hover { ... }
 ### css 사칙연산
 - calc()
 - 상식적인 연산 순서를 갖음 (곱셈,나눗셈 먼저, 왼쪽에서 오른쪽 순서, 괄호 먼저)
-- CSS MDN문서 링크(https://developer.mozilla.org/ko/docs/Web/CSS)
+- [CSS MDN문서 링크](https://developer.mozilla.org/ko/docs/Web/CSS)
