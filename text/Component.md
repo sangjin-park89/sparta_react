@@ -43,12 +43,12 @@
 
     </div>
     </details>
-        ```html
+        
         <header/>
         <container/>
             <contents1/>
         <footer/>
-        ```
+        
 >   - 이 웹사이트는 크게 `<header/>`, `<container/>`, `<footer/>` 세개의 컴포넌트가 있고, `<container/>` 컴포넌트는 자식 컴포넌트인 `<contents1/>` 컴포넌트로 이루어져 있다.
 
 ### State와 Props
