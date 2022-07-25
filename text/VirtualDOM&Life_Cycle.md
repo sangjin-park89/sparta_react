@@ -23,6 +23,7 @@
 ### 라이프 사이클 함수
 - [LifecycleEx](../lifecycle/src/LifecycleEx.js)를 바탕으로 설명
 ![LifecycleEx](../image/LifecycleEx.png)
+> - constructor() : 생성자 함수. 컴포넌트가 생성되면 가장 먼저 호출된다.
 ```jsx
 constructor(props) {
     super(props);
@@ -32,7 +33,7 @@ constructor(props) {
     console.log('in constructor!');
 }
 ```
-- constructor() : 생성자 함수. 컴포넌트가 생성되면 가장 먼저 호출된다.
+
 ```jsx
 render() {
     console.log('in render!');
