@@ -9,5 +9,5 @@
 ### 라이프 사이클
 - 컴포넌트의 라이프 사이클은 정말 중요한 개념
 - 컴포넌트가 렌더링을 준비하는 순간부터, 페이지가 사라질 때까지를 라이프 사이클이라 부름
-![life_cycle](./image/life_cycle.png)
+![life_cycle](../image/life_cycle.png)
 - 
