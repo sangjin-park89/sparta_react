@@ -1,6 +1,6 @@
 ### React에서 CSS사용하기
 - css파일 만들기
-    ex) `style.css`
+    - ex) `style.css`
 - 사용할 파일에서 import 해주기
     - ex) `import "./style.css";`
         - 같은 폴더에 있다는 가정
