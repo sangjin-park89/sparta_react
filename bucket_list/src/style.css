@@ -7,6 +7,7 @@
     display : flex;
     /* flex를 주면 자신이 딱 필요한 만큼만 필요로 하기 때문에 대부분의 경우 높이와 넓이를 지정해주는게 이쁘다. */
     /* 지금같은 경우에는 전체가 아니라 아래 container에서 높이와 넓이를 따로 주었다. */
+    flex-direction: column;
 }
 
 .container {
