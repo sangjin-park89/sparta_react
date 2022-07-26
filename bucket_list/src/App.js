@@ -14,12 +14,18 @@ class App extends React.Component {
     this.state = {
       list: ['영화관 가기', '매일 책읽기', '수영 배우기'],
     };
+
+    this.text = React.createRef();
+  }
+
+  componentDidMount() {
+    console.log(this.text);
   }
 
   // 랜더 함수 안에 리액트 엘리먼트를 넣어줍니다!
   render() {
-      console.log(this.state.list)
-      return (
+    console.log(this.text.current);
+    return (
       <Sangjin>
       <div className="App">
         <MyStyled>
@@ -29,6 +35,14 @@ class App extends React.Component {
           <BucketList list={this.state.list}/>
         </div>
         </MyStyled>
+        
+        <div>
+          <input type="text" ref={this.text}
+          onChange={() =>{
+            console.log(this.text.current.value)
+          }}
+          />
+        </div>
       </div>
       </Sangjin>
     );
