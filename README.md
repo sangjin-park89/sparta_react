@@ -9,3 +9,7 @@
 - md파일 업로드하기 전에 미리보기 할 수 있다.
 - Ctrl + Shift + V 
 - 붙여넣기 하다가 우연히 알게되어서 다른 방법은 모른다.
+
+#### tip 3
+- css margin : 0 auto;로 설정했는데 content가 가운데 정렬이 안될경우
+- display : block; 설정 더해주기
